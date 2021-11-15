@@ -110,16 +110,18 @@ body{
     align-items: center;
     background-image: linear-gradient(to right,rgb(0, 0, 0),rgb(51, 50, 51));
     color: white;
-    width: 48%;
+    width: 32%;
     height: 150px;
-    margin: 5% 0 0 2%;
+    margin: 5% 0 0 1%;
     border-radius: 7px;
 }
 
-.dialbox__dials:nth-child(odd){
+/* .dialbox__dials:nth-child(){
     
     margin: 5% 2% 0 0;
-}
+} */
+
+.dialbox__dials:nth-child()
 
 .dialbox__dials-wrap{
     width: 100%;
@@ -127,7 +129,7 @@ body{
 }
 
 .dialbox__dials-wrap .ionicon{
-    font-size: 50px;
+    font-size: 5rem;
     text-align: center;
     display: block;
     margin:0 auto;
@@ -306,7 +308,7 @@ body{
 
   
   
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 0.5rem 0;
     color: rgb(0, 0, 0);
     transition: 300ms all ease-in;
@@ -348,4 +350,38 @@ body{
         left: 6%;
         margin-top: 0.5rem;
     } */
+
+
+    html{
+        font-size: 6px;
+    }
+
+    .dialbox__dials{
+        height: 120px;
+    }
+    .dialbox__heading{
+       
+      
+        font-size: 1.4rem;
+       
+    }
+    .ionicon{
+        font-size: 3rem;
+    }
+
+    .searchbox__search{
+
+        width: 100%;
+        padding : 2.5rem 2rem;
+    }
+}
+
+
+@media only screen and  (max-width:350px){
+    html{
+        font-size: 5px;
+    }
+    .dialbox__dials{
+        height: 100px;
+    }
 }

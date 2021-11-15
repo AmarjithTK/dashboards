@@ -9,7 +9,6 @@ const removeButton = document.querySelector('.remove-btn')
 const extraIcons = [
     "bag-outline",
     "book-outline",
-    "calender-outline",
     "chatbox-outline",
     "cloud-outline",
     "code-outline",
