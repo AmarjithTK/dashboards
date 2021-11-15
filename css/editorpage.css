@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    position: relative;
+  
+}
+
+.hidden{
+    display: none !important;
+}
+
+.clearfix::after{
+    display: block;
+    content: '';
+    clear: left;
+}
+
+.floatbox{
+    
+    position: relative;
+
+    color: white;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.close-btn{
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 3%;
+    right: 3%;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100px;
+    background-color: rgb(0, 0, 0);
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 1rem 2rem 1rem rgb(83, 81, 81);
+}
+
+.floatbox-container{
+
+    width: 90%;
+    /* height: 50%; */
+    margin: 0 auto;
+    background-color: rgb(22, 101, 228);
+    /* padding-bottom: 2rem; */
+    border-radius: 8px;
+}
+
+
+.floatbox-container .btn{
+    margin: 0;
+    border: 0;
+    outline: none;
+    width: 50%;
+    padding: 1.5rem 2rem;
+    /* display: inline-block; */
+    background-color: rgb(22, 22, 22);
+    color: rgb(255, 255, 255);
+    float: left;
+    transition: 1s all ease;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 2px white solid;
+
+    /* border: 4px solid rgb(0, 0, 0); */
+ 
+}
+
+.floatbox-container .btn:first-child{
+    border-right: 2px solid white;
+    border-top-right-radius: 0;
+}
+
+
+
+.focused {
+background-color: rgb(54, 54, 54) !important;
+color: white !important;
+
+}
+
+
+
+.floatbox-delete-picker{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;
+    /* height: 200px; */
+    padding: 5rem 0;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    overflow-y: hidden;
+}
+
+.floatbox-delete-picker::-webkit-scrollbar{
+}
+
+
+.floatbox-delete-picker .centered{
+    display: block;
+
+    width: 90%;
+    height: 200px;
+    overflow-y: scroll;
+    background-color: rgb(42, 42, 42);
+    margin:2rem auto;
+    padding: 4rem 0;
+    
+    
+
+}
+
+
+.floatbox-delete-picker .centered::-webkit-scrollbar{
+    height: 0px !important;
+
+}
+
+.dialset{
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 4px solid white;
+
+}
+
+.dialset-name{
+
+    float: left;
+    width: 90%;
+    background-color: rgb(36, 36, 36);
+    padding: 1rem 0;
+    
+}
+.dialset-delete{
+    float: left;
+    width: 10%;
+    background-color: rgb(90, 90, 90);
+    padding: 1rem 0;
+    transition: 500ms all ease-in;
+}
+
+.dialset-delete:hover{
+    background-color: turquoise;
+}
+
+
+.floatbox-add-picker{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 200px; */
+    padding: 5rem 0;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+
+}
+
+.floatbox-add-picker .centered{
+    
+    width: 80%;
+    background-color: rgb(0, 0, 0);
+    padding: 3rem 0;
+
+}
+
+.addset{
+
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.addset input[type='text']::placeholder{
+border: 0;
+
+outline: none;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+}
+
+.addset-name{
+    display: block;
+    width: 100%;
+    padding: 1rem 2rem;
+    /* margin-top: 2rem; */
+    border-radius: 8px;
+   
+    border: 0;
+    /* border-bottom: 4px solid rgb(255, 255, 255); */
+
+    margin-bottom: 2rem;
+
+    outline: none;
+}
+
+
+
+.addset-url{
+    display: block;
+    width: 100%;
+    padding: 1rem 2rem;
+   
+    border: 0;
+    outline: none;
+    /* margin-top: 2rem; */
+    margin-bottom: 2rem;
+
+    border-radius: 8px;
+
+}
+
+.addset-add{
+    background-color: rgb(49, 49, 49);
+    color: white;
+    display: block;
+    width: 25%;
+    padding: .8rem 2rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border: 0;
+    border-radius: 8px;
+}
+
+
+
+@media only screen and (max-width:500px){
+    .addset{
+
+        width: 95%;
+        margin: 0 auto;
+    
+    }
+
+    .dialset{
+        width: 90%;
+    }
+}
