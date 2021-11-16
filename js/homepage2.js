@@ -3,7 +3,9 @@ const floatForm = document.querySelector('.floatbox__form')
 const floatName = document.querySelector('#name')
 const floatUrl = document.querySelector('#url')
 
+// document.documentElement.style.setProperty('--background', '#000');
 
+// console.log(document.documentElement.style.getPropertyValue('--background-color'))
 const removeButton = document.querySelector('.remove-btn')
 
 const extraIcons = [
@@ -70,7 +72,7 @@ const UpdatePage = (data) => {
                 iconIndex = 0
            
             template = `
-            <div class="dialbox__dials" data-url = ${element.url}>
+            <div class="dialbox__dials dark-fg" data-url = ${element.url}>
                 <div class = "dialbox__dials-wrap">
                     <ion-icon name="${extraIcons[iconIndex]}" class="ionicon"></ion-icon>
                     <h2 class="dialbox__heading">${element.name}</h2>   
@@ -80,7 +82,7 @@ const UpdatePage = (data) => {
         }
         else {
             template = `
-     <div class="dialbox__dials" data-url = ${element.url}>
+     <div class="dialbox__dials dark-fg" data-url = ${element.url}>
          <div class = "dialbox__dials-wrap">
              <ion-icon name="${element.icon}" class="ionicon"></ion-icon>
              <h2 class="dialbox__heading">${element.name}</h2>   

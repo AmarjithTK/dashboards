@@ -1,10 +1,28 @@
 const searchForm = document.querySelector('.searchbox__form')
+const searchField = document.querySelector('.searchbox__search')
 const floatButton = document.querySelector('.footer-button')
 const floatBox = document.querySelector('.floatbox')
 const closeButton = document.querySelector('.close-btn')
 
 
 
+searchField.focus()
+
+
+
+// darkModeToggle.addEventListener('click',(e)=>{
+    
+
+// //     if(){
+        
+       
+// //     }
+// //     else
+   
+
+// // }
+//     // currentval.setProperty('color-scheme','light')
+// )
   
 
 // opening the add wizard
