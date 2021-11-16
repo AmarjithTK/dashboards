@@ -74,7 +74,7 @@ const UpdatePage = (data) => {
             template = `
             <div class="dialbox__dials dark-fg" data-url = ${element.url}>
                 <div class = "dialbox__dials-wrap">
-                    <ion-icon name="${extraIcons[iconIndex]}" class="ionicon"></ion-icon>
+                    <ion-icon name="${extraIcons[iconIndex]}" class="ionicon dark-icon"></ion-icon>
                     <h2 class="dialbox__heading">${element.name}</h2>   
                 </div>          
             </div>  `
@@ -84,7 +84,7 @@ const UpdatePage = (data) => {
             template = `
      <div class="dialbox__dials dark-fg" data-url = ${element.url}>
          <div class = "dialbox__dials-wrap">
-             <ion-icon name="${element.icon}" class="ionicon"></ion-icon>
+             <ion-icon name="${element.icon}" class="ionicon dark-icon"></ion-icon>
              <h2 class="dialbox__heading">${element.name}</h2>   
          </div>          
      </div>  `}

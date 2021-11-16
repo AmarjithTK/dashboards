@@ -1,12 +1,10 @@
 @media only screen and (min-width:800px){
     .dialbox__dials{
         width: 24%;
-        margin: 2% 1% 0 0%;
+        /* margin: 2% 1% 0 0%; */
+        margin: 2% 0 0 0;
     }
-    .dialbox__dials:nth-child(odd){
-    
-        margin: 2% 1% 0 0;
-    }
+ 
 
    
     /* .dialbox__dials:nth-child(odd){
@@ -44,18 +42,19 @@
 
     .searchbox__search{
 
-        width: 98%;
+        width: 95%;
         
     }
 }
 
 
-@media only screen and  (max-width:400px){
+@media only screen and  (max-width:450px){
     html{
         font-size: 6px;
     }
     .dialbox__dials{
         height: 100px;
+     
     }
 }
 @media only screen and  (max-width:380px){
