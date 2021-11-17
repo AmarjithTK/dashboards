@@ -47,18 +47,35 @@ body{
 
 
 .dark-bg{
-    background: #1e1f22;
+    background: #082032 ;
 
-    color: white !important;
+    color: rgb(211, 184, 184) !important;
+    
 }
 
 .dark-fg{
-    background: #0C0C0E !important;  
+    background: #2C394B !important;  
+    color: rgb(211, 184, 184) !important;
 }
 
 .dark-icon{
-    color: #1effc7;
+    color: #be6f5f;
+    filter: blur(0.6px);
 }
+
+.dark-search{
+    background-color: #334756 !important;
+}
+
+.dark-search::placeholder{
+    color: rgb(211, 184, 184) ;
+}
+
+
+/* .dark-placeholder::placeholder{
+    color: whi;
+
+} */
 /* dark mode defenitions */
 
 
@@ -83,7 +100,7 @@ body{
 
 .search{
     width: 100%;
-   color: white;
+   
 }
 
 .searchbox{
@@ -101,8 +118,7 @@ body{
     text-align: center;
     padding: 1rem 0 1rem 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 5rem;
-    
+    font-size: 5rem; 
 
 }
 .searchbox__form{
@@ -121,10 +137,11 @@ body{
     /* marin-bottom: 10rem; */
     padding: 1.3rem 2rem;
     border-radius: 100px;
+    font-weight: bold;
     border: none;
+    color: white;
     background-color: rgb(250, 248, 246);
-
-    border: 2px solid white;
+  
 
 }
 
@@ -132,6 +149,10 @@ body{
     outline: none;
   
 }
+
+/* .searchbox__search:target{
+    color: rgb(255, 0, 0);
+} */
 
 
 /* dials section */
@@ -160,11 +181,13 @@ body{
     align-items: center;
     background-image: linear-gradient(to right,rgb(0, 0, 0),rgb(51, 50, 51));
     color: white;
-    width: 32%;
+    width: 48%;
     height: 150px;
-    margin: 2%  0 0 0%;
+    margin: 4%  0 0 0%;
     border-radius: 7px;
     transition: 300ms all ease;
+   
+
 }
 
 .dialbox__dials:hover{
@@ -193,9 +216,10 @@ body{
 
 .dialbox__heading{
     text-align: center;
-  
+    
     font-size: 1.8rem;
     overflow-wrap:break-word;
+    padding: 0 1.5rem;
 }
 
 

@@ -21,45 +21,61 @@
         left: 6%;
         margin-top: 0.5rem;
     } */
-
+    .dialbox{
+        width: 90%;
+    }
 
     html{
-        font-size: 7px;
+        font-size: 9px;
     }
 
     .dialbox__dials{
         height: 120px;
+        
     }
+
+
     .dialbox__heading{
        
       
-        font-size: 1.4rem;
+        font-size: 2rem;
        
     }
+
+
     .ionicon{
-        font-size: 3rem;
+        font-size: 6rem;
     }
 
     .searchbox__search{
 
         width: 95%;
+
+        padding: 2rem;
+        margin: 1rem auto  1rem auto;
+        font-size: 2rem;
         
+    }
+
+    .searchbox__heading{
+        font-size: 5rem;
     }
 }
 
 
 @media only screen and  (max-width:450px){
     html{
-        font-size: 6px;
+        font-size: 8px;
     }
     .dialbox__dials{
         height: 100px;
      
     }
+
 }
 @media only screen and  (max-width:380px){
     html{
-        font-size: 5px;
+        font-size: 7px;
     }
     .dialbox__dials{
         height: 100px;
