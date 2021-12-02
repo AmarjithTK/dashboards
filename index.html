@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.filestackcontent.com/ZDO4kTqRRgKscA1xCOGb"> -->
+</head>
+
+<body>
+
+
+    <style>
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        /* .navbar h1 {
+            padding: 1rem 0 0 0;
+            font-size: 3rem;
+        } */
+
+        .stats-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+
+
+
+   
+
+        <div class="container mt-5 mb-0 pb-0 centered">
+            
+                <p class="title is-2">Osmium PC control</p>
+    
+        </div>
+
+
+
+   
+
+
+
+
+    <section class="section pt-5 cards-section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="box mb-2 has-text-centered centered ">
+                        <h3 class="name is-size-5 has-text-weight-bold is-family-sans-serif	">starship</h3>
+
+                    </div>
+                    <div class="box m-0 has-text-primary stats-box">
+                        <h3 class="name1">Status</h3>
+                        <h3 class="status has-text-weight-bold is-size-6">running</h3>
+                    </div>
+
+                    <div class="box mb-0 stats-box">
+                        <h3 class="name">uptime</h3>
+                        <h3 class="status">50minutes</h3>
+                    </div>
+                   
+
+                    <div class="box mb-0 stats-box">
+                        <h3 class="name">OS</h3>
+                        <h3 class="status">Arch linux</h3>
+                    </div>
+
+                    <div class="box mb-0 stats-box">
+                        <h3 class="name">Host name</h3>
+                        <h3 class="status">superheavy</h3>
+                    </div>
+
+
+                 
+
+                    <div class="box mb-0 stats-box center">
+                        <h3 class="name">Shutdown</h3>
+                        <form action="/send-shutdown" class="form" method="POST">
+                            <button data-hostname = '' class="button is-danger is-light btn-turn-off">now</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="column is-4">
+                    <div class="box mb-1 stats-box has-background-warning">
+                        <h3 class="name">starship</h3>
+
+                    </div>
+                    <div class="box m-0 has-text-danger stats-box">
+                        <h3 class="name1">Status</h3>
+                        <h3 class="status has-text-weight-bold is-size-6 is-light">down</h3>
+                    </div>
+
+                    <div class="box mb-0 stats-box">
+                        <h3 class="name">uptime</h3>
+                        <h3 class="status">50minutes</h3>
+                    </div>
+                   
+
+                    <div class="box mb-0 stats-box">
+                        <h3 class="name">OS</h3>
+                        <h3 class="status">Arch linux</h3>
+                    </div>
+
+                    <div class="box mb-0 stats-box">
+                        <h3 class="name">Host name</h3>
+                        <h3 class="status">superheavy</h3>
+                    </div>
+
+
+                 
+
+                    <div class="box mb-0 stats-box center">
+                        <h3 class="name">Shutdown</h3>
+                        <button class="button is-danger btn-turn-off">not now</button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="column is-4">
+                    <div class="box mb-1 stats-box has-background-warning">
+                        <h3 class="name">starship</h3>
+
+                    </div>
+                    <div class="box m-0 has-text-primary stats-box">
+                        <h3 class="name1">Status</h3>
+                        <h3 class="status has-text-weight-bold is-size-6">running</h3>
+                    </div>
+
+                    <div class="box mb-0 stats-box">
+                        <h3 class="name">uptime</h3>
+                        <h3 class="status">50minutes</h3>
+                    </div>
+                   
+
+                    <div class="box mb-0 stats-box">
+                        <h3 class="name">OS</h3>
+                        <h3 class="status">Arch linux</h3>
+                    </div>
+
+                    <div class="box mb-0 stats-box">
+                        <h3 class="name">Host name</h3>
+                        <h3 class="status">superheavy</h3>
+                    </div>
+
+
+                 
+
+                    <div class="box mb-0 stats-box center">
+                        <h3 class="name">Shutdown</h3>
+                        <button class="button is-danger btn-turn-off">now</button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="column is-4">
+                    <div class="box mb-1 stats-box has-background-warning">
+                        <h3 class="name">starship</h3>
+
+                    </div>
+                    <div class="box m-0 has-text-primary stats-box">
+                        <h3 class="name1">Status</h3>
+                        <h3 class="status has-text-weight-bold is-size-6">running</h3>
+                    </div>
+
+                    <div class="box mb-0 stats-box">
+                        <h3 class="name">uptime</h3>
+                        <h3 class="status">50minutes</h3>
+                    </div>
+                   
+
+                    <div class="box mb-0 stats-box">
+                        <h3 class="name">OS</h3>
+                        <h3 class="status">Arch linux</h3>
+                    </div>
+
+                    <div class="box mb-0 stats-box">
+                        <h3 class="name">Host name</h3>
+                        <h3 class="status">superheavy</h3>
+                    </div>
+
+
+                 
+
+                    <div class="box mb-0 stats-box center">
+                        <h3 class="name">Shutdown</h3>
+                        <button class="button is-danger btn-turn-off">now</button>
+
+                    </div>
+
+                </div>
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+ 
+        <footer class="section has-background-light">
+            <div class="container has-text-centered">
+              <p>
+                <strong>Osmium</strong> by <a href="https://jgthms.com">Amarjith TK</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">Here</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+              </p>
+            </div>
+          </footer>
+  
+
+
+
+
+
+    <script>
+
+        // const turnOFF = document.querySelectorAll('.btn-turn-off')
+        // turnOFF.addEventListener('click', (e) => {
+        //     if (!turnOFF.classList.contains('is-loading')) {
+        //         turnOFF.classList.add('is-loading')
+        //         turnOFF.classList.add('is-danger')
+        //     }
+        //     else
+        //         turnOFF.classList.remove('is-loading')
+
+
+
+        // })
+
+        const body = document.querySelector('body')
+        body.addEventListener('click', (e) => {
+
+
+            console.log(e)
+            if (e.target.classList.contains('btn-turn-off')) {
+
+                console.log(e.target)
+
+                if (e.target.classList.contains('is-success')){
+
+                    e.target.classList.remove('is-success')
+                    e.target.classList.add('is-danger')
+
+                
+                }
+                else if(!e.target.classList.contains('is-success')){
+                    e.target.classList.add('is-success')
+                    e.target.classList.remove('is-danger')
+
+
+                }
+
+
+
+            }
+
+
+
+        })
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+
+
+</body>
+
+</html>
